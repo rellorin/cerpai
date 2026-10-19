@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>AI in cERP — Ranked Opportunities and Paid-Feature Strategy</title>
+<title>AI in cERP — ranked opportunities</title>
 <style>
 :root {
   --navy: #17324d;
@@ -13,7 +13,6 @@
   --ink: #1e2933;
   --muted: #5f6d78;
   --paper: #ffffff;
-  --wash: #f3f7f8;
   --line: #dce5e8;
   --warm: #f4b860;
   --shadow: 0 10px 34px rgba(23, 50, 77, .09);
@@ -72,7 +71,6 @@ h3 { font-size: 1.28rem; margin: 38px 0 12px; }
 p { margin: 0 0 16px; }
 main > p:first-of-type { color: #536774; font-size: 1.08rem; }
 strong { color: #173f55; }
-code { background: #eef3f4; color: #244b5e; border-radius: 5px; padding: .12em .35em; font-family: Consolas, "SFMono-Regular", monospace; font-size: .9em; overflow-wrap: anywhere; }
 table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; margin: 22px 0 30px; font-size: .91rem; border: 1px solid var(--line); border-radius: 10px; }
 thead { background: var(--navy); color: #fff; }
 th, td { padding: 11px 13px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
@@ -81,13 +79,7 @@ tbody tr:nth-child(even) { background: #f7fafb; }
 tbody tr:hover { background: #eef7f7; }
 ul, ol { padding-left: 1.45rem; }
 li { margin: .38rem 0; }
-blockquote { margin: 22px 0; padding: 14px 20px; border-left: 4px solid var(--aqua); background: #edf8f7; color: #354e59; }
-hr { border: 0; border-top: 1px solid var(--line); margin: 42px 0; }
 .footer { margin: 38px auto 18px; padding: 0 28px; max-width: 1280px; color: var(--muted); font-size: .82rem; text-align: center; }
-.priority-panel { margin: 24px 0 30px; padding: 22px 24px; border: 1px solid #9dd7d3; border-left: 6px solid var(--aqua); border-radius: 12px; background: linear-gradient(135deg, #edf9f8, #f8fbfb); }
-.priority-panel h3 { margin-top: 0; }
-.badge { display: inline-block; margin: 0 6px 6px 0; padding: 3px 9px; border-radius: 999px; background: var(--navy); color: #fff; font-size: .76rem; font-weight: 700; letter-spacing: .02em; }
-.source-note { color: var(--muted); font-size: .9rem; }
 @media (max-width: 980px) {
   .shell { grid-template-columns: 1fr; margin-top: 20px; }
   .toc { position: static; max-height: none; }
@@ -115,418 +107,183 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 42px 0; }
 }
 </style>
 </head>
-<body><div class="topbar"><strong>AI IN Cerp</strong> · Post-meeting priorities · Updated October 19, 2026</div><div class="shell"><nav class="toc" aria-label="Document contents"><p class="toc-title">Contents</p><ul><li class="toc-level-2"><a href="#recommended-direction">Recommended direction</a></li>
-<li class="toc-level-2"><a href="#meeting-selected-starting-backlog">Meeting-selected starting backlog</a></li>
+<body>
+<div class="topbar"><strong>AI in cERP</strong> · Business opportunity brief · Updated October 19, 2026</div>
+<div class="shell">
+<nav class="toc" aria-label="Document contents">
+<p class="toc-title">Contents</p>
+<ul>
+<li class="toc-level-2"><a href="#recommended-direction">Recommended direction</a></li>
 <li class="toc-level-2"><a href="#about-this-review">About this review</a></li>
 <li class="toc-level-2"><a href="#ranking-at-a-glance">Ranking at a glance</a></li>
-<li class="toc-level-2"><a href="#detailed-opportunities-and-meeting-notes">Detailed opportunities and meeting notes</a></li>
-<li class="toc-level-3"><a href="#submittal-intake-and-revision-impact-assistant">1. Submittal intake and revision-impact assistant</a></li>
-<li class="toc-level-3"><a href="#release-readiness-and-exception-assistant">2. Release-readiness and exception assistant</a></li>
-<li class="toc-level-3"><a href="#vendor-acknowledgment-and-purchasing-follow-up">3. Vendor acknowledgment and purchasing follow-up</a></li>
-<li class="toc-level-3"><a href="#contract-margin-and-cost-risk-assistant">4. Contract margin and cost-risk assistant</a></li>
-<li class="toc-level-3"><a href="#rfq-and-quote-preparation-assistant">5. RFQ and quote preparation assistant</a></li>
-<li class="toc-level-3"><a href="#billing-readiness-and-revenue-recovery-assistant">6. Billing-readiness and revenue-recovery assistant</a></li>
-<li class="toc-level-3"><a href="#unassociated-inventory-reuse-assistant">7. Unassociated inventory reuse assistant</a></li>
-<li class="toc-level-3"><a href="#natural-language-productconfiguration-assistant">8. Natural-language product/configuration assistant</a></li>
-<li class="toc-level-3"><a href="#ask-cerp-operational-chatbot">9. “Ask cERP” operational chatbot</a></li>
-<li class="toc-level-3"><a href="#field-service-and-work-order-closeout-assistant">10. Field-service and work-order closeout assistant</a></li>
-<li class="toc-level-3"><a href="#capacity-and-delivery-planning-assistant">11. Capacity and delivery planning assistant</a></li>
-<li class="toc-level-3"><a href="#cerp-help-and-onboarding-chatbot">12. cERP help and onboarding chatbot</a></li>
-<li class="toc-level-2"><a href="#microsoft-integration-approach">Microsoft integration approach</a></li>
-<li class="toc-level-2"><a href="#gating-optional-or-paid-ai">Gating optional or paid AI</a></li>
-<li class="toc-level-3"><a href="#using-cerp-feature-controls">Using cERP feature controls</a></li>
-<li class="toc-level-3"><a href="#recommended-runtime-gate">Recommended runtime gate</a></li>
-<li class="toc-level-3"><a href="#suggested-commercial-packaging-for-discussion-not-final-pricing">Suggested commercial packaging — for discussion, not final pricing</a></li>
-<li class="toc-level-2"><a href="#suggested-delivery-sequence-and-decision-points">Suggested delivery sequence and decision points</a></li>
-<li class="toc-level-2"><a href="#talking-points-and-decisions-for-the-meeting">Talking points and decisions for the meeting</a></li>
-<li class="toc-level-2"><a href="#review-status">Review status</a></li></ul></nav><main><h1 id="ai-in-cerp-ranked-opportunities-and-paid-feature-strategy">AI in cERP — ranked opportunities and paid-feature strategy</h1>
-<p><strong>Post-meeting product brief — Monday, October 19, 2026</strong><br />
-Originally prepared October 18 and updated with the October 19 meeting decisions and <a href="https://accessit.atlassian.net/browse/CERP-5000">CERP-5000</a>. This remains a product and business-process proposal, not an implementation commitment.</p>
+<li class="toc-level-2"><a href="#detailed-opportunities">Detailed opportunities</a></li>
+<li class="toc-level-3"><a href="#ask-cerp-copilot">1. Ask cERP Copilot</a></li>
+<li class="toc-level-3"><a href="#project-manager-and-release-readiness-agent">2. Project Manager and release-readiness agent</a></li>
+<li class="toc-level-3"><a href="#release-assignment-assistant">3. Release assignment assistant</a></li>
+<li class="toc-level-3"><a href="#pricing-and-costing-assistant">4. Pricing and costing assistant</a></li>
+<li class="toc-level-3"><a href="#billing-and-schedule-of-values-assistant">5. Billing and schedule-of-values assistant</a></li>
+<li class="toc-level-3"><a href="#submittal-intake-and-revision-impact-assistant">6. Submittal intake and revision-impact assistant</a></li>
+<li class="toc-level-3"><a href="#vendor-acknowledgment-and-purchasing-follow-up">7. Vendor acknowledgment and purchasing follow-up</a></li>
+<li class="toc-level-3"><a href="#contract-margin-and-cost-risk-assistant">8. Contract margin and cost-risk assistant</a></li>
+<li class="toc-level-3"><a href="#rfq-and-quote-preparation-assistant">9. RFQ and quote preparation assistant</a></li>
+<li class="toc-level-3"><a href="#unassociated-inventory-reuse-assistant">10. Unassociated inventory reuse assistant</a></li>
+<li class="toc-level-3"><a href="#natural-language-product-configuration-assistant">11. Natural-language product/configuration assistant</a></li>
+<li class="toc-level-3"><a href="#field-service-and-work-order-closeout-assistant">12. Field-service and work-order closeout assistant</a></li>
+<li class="toc-level-3"><a href="#capacity-and-delivery-planning-assistant">13. Capacity and delivery planning assistant</a></li>
+<li class="toc-level-3"><a href="#cerp-help-and-onboarding-chatbot">14. cERP help and onboarding chatbot</a></li>
+<li class="toc-level-2"><a href="#suggested-delivery-sequence">Suggested delivery sequence</a></li>
+</ul>
+</nav>
+<main>
+<h1 id="ai-in-cerp-ranked-opportunities">AI in cERP — ranked opportunities</h1>
+<p><strong>Business opportunity brief — updated Monday, October 19, 2026</strong><br>
+Updated with the October 19 AI discussion and <a href="https://accessit.atlassian.net/browse/CERP-5000">CERP-5000</a>.</p>
+
 <h2 id="recommended-direction">Recommended direction</h2>
 <p>cERP has a strong foundation for AI because it already links contract material, assignments/openings, releases, purchase orders, shop/work orders, inventory, and billing. The biggest opportunity is to help users interpret incoming information and understand what those linked records mean for their next decision.</p>
-<p>The meeting established a practical starting point: build a bounded, read-only <strong>Ask cERP Copilot</strong> first, and make project/release readiness its first high-value question set. This combines the easiest experience to adopt with a concrete operational outcome: “What is preventing this project or release from progressing, which records prove it, and what should I do next?” Scheduled alerts and specialized agents should reuse those same trusted services after interactive answers are proven.</p>
-<p>Use the same underlying cERP services for page actions, scheduled summaries, and a future chatbot. Keep quantities, prices, status calculations, compatibility rules, and posting in validated application logic. AI should interpret, explain, suggest, and prepare drafts around that logic.</p>
-<p>For commercial packaging, sell <strong>business capabilities with a usage allowance</strong>, rather than access to a particular model. Use Feature Management/Activation for administrator control, but enforce paid entitlement and consumption limits in the execution service as well.</p>
-<h2 id="meeting-selected-starting-backlog">Meeting-selected starting backlog</h2>
-<div class="priority-panel">
-<span class="badge">Agreed starting direction</span><span class="badge">CERP-5000</span>
-<h3>Start with questions, then become proactive</h3>
-<p>The October 19 discussion aligned on a three-step progression: first answer grounded questions against live cERP data; next run scheduled checks and deliver alerts without waiting for a prompt; then add specialized project-management, pricing, and billing agents. The first release should be useful without making autonomous ERP changes.</p>
-</div>
-<table>
-<thead><tr><th>Order</th><th>Starting capability</th><th>What users should get first</th><th>Difficulty</th><th>Control boundary</th></tr></thead>
-<tbody>
-<tr><td>1</td><td><strong>Ask cERP Copilot</strong></td><td>Answers for contract/project status, overdue customers or materials, past orders, alerts, and draft reports—with an as-of time and links to supporting records.</td><td>3/5</td><td>Read-only, permission-aware questions; no unsupported calculations or writes.</td></tr>
-<tr><td>2</td><td><strong>Project Manager and release-readiness agent</strong></td><td>Project summaries and blockers: material past due, late or not ordered; unit-cost versus submittal-cost variance; overdue/upcoming PM tasks; quote expirations; and conditions that could prevent shipping.</td><td>3/5 interactive; 4/5 proactive</td><td>Use existing reports and deterministic cERP services for facts. Begin interactively, then add scheduled briefs with deduplication.</td></tr>
-<tr><td>3</td><td><strong>Release assignment suggestions</strong></td><td>Interpret a release name such as “hollow metal frames” and propose matching material using item category, product group, vendor, phase, and other supported filters.</td><td>4/5</td><td>Suggest and explain assignments; a user reviews them. Never silently move or omit material.</td></tr>
-<tr><td>4</td><td><strong>Pricing and costing assistant</strong></td><td>Detect vendor increases and propose purchase-price-list and cost updates, with optional sales-price calculations or an export for review.</td><td>4/5</td><td>Respect each customer’s price-list setup; produce a reviewed proposal before publishing changes.</td></tr>
-<tr><td>5</td><td><strong>Billing / schedule-of-values assistant</strong></td><td>Create proposed billing lines by phase, floor, or project structure; calculate WIP, progress, and scheduled-to-ship amounts; recommend percentage and dollar billing, including AIA support.</td><td>4/5</td><td>Recommendations only at first. Existing billing rules and user approval remain authoritative.</td></tr>
-</tbody>
-</table>
-<p><strong>Why these go first.</strong> They came directly from the product team’s working session and are captured in Jira as the initial implementation backlog. They also form a reusable ladder: the same governed data tools that answer a question can power a page action, a scheduled check, and eventually an approved workflow.</p>
-<p><strong>Immediate discovery work.</strong> Maintain a prioritized question list; identify the exact fields, reports, and calculations behind each answer; define expected output and record links; and turn feasible slices into separate Jira tickets. Existing reports are valuable specifications, but their calculations and trustworthiness should be verified with process owners before they become agent tools.</p>
-<p class="source-note"><strong>Sources:</strong> ContractERP AI Agents meeting notes, October 19, 2026; <a href="https://accessit.atlassian.net/browse/CERP-5000">CERP-5000 — Potential idea for using AI</a> (internal Jira access may be required). Role-based wording is used where the meeting transcript and Jira record differ on a person’s name.</p>
-<h2 id="about-this-review">About this review</h2>
-<p>This report is based on a targeted review of cERP workflows covering contracts, document intake, release schedules, purchasing, quoting, billing, inventory, configuration, field service, work orders, and scheduling. The opportunities are product hypotheses for discussion and should be validated with representative customer processes, data, and measurable outcomes before implementation.</p>
-<p><strong>Ranking is an analyst judgment</strong>, based on likely labor saved, financial and operational consequence, frequency, and breadth of users affected. Impact order is separate from suggested build order. Document-heavy contractors may favor submittal assistance; distribution-heavy customers may favor purchasing and inventory; service-heavy customers may move field closeout higher.</p>
-<p><strong>Difficulty scale:</strong> 1 = low; 2 = low–medium; 3 = medium; 4 = high; 5 = very high. Ratings assume a shared identity, entitlement, metering, and AI integration foundation exists.</p><h2 id="ranking-at-a-glance">Ranking at a glance</h2>
-<table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Opportunity</th>
-<th>Primary user benefit</th>
-<th>Expected impact</th>
-<th>Integration difficulty</th>
-<th>Suggested initial form</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Submittal intake and revision-impact assistant</td>
-<td>Less rekeying and fewer missed changes after ordering</td>
-<td>Very high</td>
-<td>4/5 — High</td>
-<td>Document review and proposed changes</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Release-readiness and exception assistant</td>
-<td>Find blockers before they delay delivery or installation</td>
-<td>Very high</td>
-<td>3/5 — Medium</td>
-<td>Explain selected release; daily exception brief</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Vendor acknowledgment and purchasing follow-up</td>
-<td>Faster PO updates and earlier response to supplier changes</td>
-<td>Very high</td>
-<td>4/5 — High</td>
-<td>Compare acknowledgment with PO; draft follow-up</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Contract margin and cost-risk assistant</td>
-<td>Surface cost deterioration while action is still possible</td>
-<td>High</td>
-<td>3/5 — Medium</td>
-<td>Evidence-based variance explanation</td>
-</tr>
-<tr>
-<td>5</td>
-<td>RFQ and quote preparation assistant</td>
-<td>Faster bids and better visibility into scope exclusions</td>
-<td>High</td>
-<td>4/5 — High</td>
-<td>Vendor comparison and draft quote</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Billing-readiness and revenue-recovery assistant</td>
-<td>Shorten billing preparation and find items needing review</td>
-<td>High</td>
-<td>4/5 — High</td>
-<td>Billing exception queue and evidence package</td>
-</tr>
-<tr>
-<td>7</td>
-<td>Unassociated inventory reuse assistant</td>
-<td>Reduce avoidable purchases and stranded stock</td>
-<td>High</td>
-<td>3/5 — Medium</td>
-<td>Ranked reuse/disposition suggestions</td>
-</tr>
-<tr>
-<td>8</td>
-<td>Natural-language product/configuration assistant</td>
-<td>Help users find and configure the right item</td>
-<td>Medium–high</td>
-<td>4/5 — High</td>
-<td>Guided selection using existing rules</td>
-</tr>
-<tr>
-<td>9</td>
-<td>“Ask cERP” operational chatbot</td>
-<td>Answer cross-document questions without manual navigation</td>
-<td>Medium–high</td>
-<td>3/5 — Medium for a bounded read-only scope</td>
-<td>Permission-aware questions with record links</td>
-</tr>
-<tr>
-<td>10</td>
-<td>Field-service and work-order closeout assistant</td>
-<td>Reduce paperwork and improve completeness of job records</td>
-<td>Medium–high</td>
-<td>3/5 — Medium; 4 with voice/mobile work</td>
-<td>Draft notes, time, and follow-up tasks</td>
-</tr>
-<tr>
-<td>11</td>
-<td>Capacity and delivery planning assistant</td>
-<td>Explain constraints and compare feasible scheduling options</td>
-<td>Medium–high, segment-dependent</td>
-<td>5/5 — Very high for optimization</td>
-<td>Read-only constraint explanation first</td>
-</tr>
-<tr>
-<td>12</td>
-<td>cERP help and onboarding chatbot</td>
-<td>Faster answers and fewer routine support interruptions</td>
-<td>Medium</td>
-<td>2/5 — Low–medium</td>
-<td>Answers from approved product documentation</td>
-</tr>
-</tbody>
-</table>
-<h2 id="detailed-opportunities-and-meeting-notes">Detailed opportunities and meeting notes</h2>
-<h3 id="submittal-intake-and-revision-impact-assistant">1. Submittal intake and revision-impact assistant</h3>
-<p><strong>What users would experience.</strong> An estimator or project manager brings in a submittal, material schedule, or revision. cERP proposes item/vendor matches, flags missing attributes and ambiguous openings, and presents an understandable change list: added, removed, changed, and already committed. Each proposed value links back to its source page or supplied file.</p>
-<p><strong>Example to explain in the meeting:</strong> “A revised schedule changes the finish on twelve openings. Show me which are still open, which have already been ordered, and which need a change-order or supplier conversation.” This example is illustrative, not an observed customer incident.</p>
-<p><strong>Why it ranks first.</strong> Data entry is only part of the cost. A missed revision can propagate into purchasing, fabrication, delivery, and billing. Assistance at the point of intake can prevent downstream rework across several departments.</p>
-<p><strong>Existing foundation.</strong> <code>CERP Import Management</code> accepts staged contract/material data, resolves cross-references, records import exceptions, and checks whether material can be replaced. <code>CERP Submittal Sync Check</code> already compares vendor, description, item/category/group, quote reference, expiry, and attributes. The tests cover initial import and replacement of open material on reimport.</p>
-<p><strong>AI contribution and integration.</strong> Use document extraction for PDFs/scans, a Foundry-hosted language model to interpret descriptions and propose mappings, and existing AL logic to identify actual differences and replacement eligibility. Retain the existing XML path for structured inputs. An especially practical first increment is an explanation of existing revision differences and import exceptions; broader PDF intake follows.</p>
-<p><strong>Difficulty: 4/5.</strong> The hard work is stable line/opening identity, inconsistent supplier descriptions, dimensions/hand/finish, and revisions that affect committed material. Arbitrary drawing interpretation should be a later, separately evaluated scope.</p>
-<p><strong>Boundaries and measurement.</strong> Require review before import/change application; never let the model override <code>ReplaceableOnImport</code> or silently delete committed lines. Recheck the current record before applying a reviewed proposal. Measure review minutes per revision, accepted match rate, unresolved exceptions, and corrections after import. <strong>Proposed feature:</strong> <code>AI.SubmittalReview</code>; meter by bounded document/revision job.</p>
-<p><strong>Presenter note:</strong> “We already know how to import and protect material. AI helps users understand messy incoming information and the consequences of a revision.”</p>
-<h3 id="release-readiness-and-exception-assistant">2. Release-readiness and exception assistant</h3>
-<p><strong>What users would experience.</strong> On Release Schedule Status, an <strong>Explain readiness</strong> action returns a short list of blockers, responsible parties where recorded, and linked records. A scheduled version prepares a project manager’s daily list of releases requiring attention, with duplicate alerts suppressed.</p>
-<p><strong>Example:</strong> “This release is due Friday. One component is promised Monday, one work order remains incomplete, and approval to order is missing on another line. Here are the records to review.” Missing dates should be reported as unknown, not treated as on-time delivery.</p>
-<p><strong>Value.</strong> Project managers spend less time reconstructing the story across purchasing, inventory, production, and delivery. Earlier intervention can reduce expediting, incomplete shipments, and idle installers.</p>
-<p><strong>Existing foundation.</strong> Release Schedule contains due dates, approval, deposit requirements, delivery scheduling references, status, location, and latest PO promised receipt date. Its <code>Status()</code> procedure evaluates material and assignments. The status page exposes navigation, line details, stock association, and release/service actions. Lifecycle tests cover purchase, receipt, shop-order, sale, and shipping transitions.</p>
-<p><strong>AI contribution and integration.</strong> Create a deterministic readiness service that returns blockers and supporting record IDs. Let AI explain the result and draft a follow-up. Existing alerts and ordinary filters can identify overdue records without a model; AI adds cross-document explanation and communication. Use Foundry through an embedded page experience, with scheduled summaries later.</p>
-<p><strong>Difficulty: 3/5.</strong> The information is largely structured, but joins must distinguish material ready-to-ship from overall release state, and handle partial quantities and assignments correctly. Do not build around the obsolete <code>CriticalReleaseCount</code> procedure.</p>
-<p><strong>Boundaries and measurement.</strong> Pilot read-only. Do not autonomously release, reschedule, or waive deposits/approvals. Show the data timestamp. Measure time to diagnose a release, actionable-alert rate, and blockers found before due dates. <strong>Proposed feature:</strong> <code>AI.ReleaseReadiness</code>; interactive allowance plus a separate scheduled-run allowance.</p>
-<p><strong>Presenter note:</strong> “The board tells us status. This explains why, shows the evidence, and prepares the next step.”</p>
-<h3 id="vendor-acknowledgment-and-purchasing-follow-up">3. Vendor acknowledgment and purchasing follow-up</h3>
-<p><strong>What users would experience.</strong> A purchaser uploads or selects a vendor acknowledgment. cERP compares it with the PO and highlights changed promised dates, quantities, costs, substitutions, and vendor references. It drafts the proposed field updates and a supplier follow-up message.</p>
-<p><strong>Value.</strong> Acknowledgments and follow-up are repetitive, while a small date or specification change can disrupt an entire release. This also keeps release-readiness information more current.</p>
-<p><strong>Existing foundation.</strong> Purchase-status pages and purchase-management routines operate on purchase documents; cERP associations connect purchases back to contract/release/material records. Receiving tests explicitly cover Vendor Order No., Promised Receipt Date, Direct Unit Cost, staging, partial receipts, and receipt-only posting.</p>
-<p><strong>AI contribution and integration.</strong> Document extraction and a language model interpret supplier wording; deterministic matching reconciles PO/line/item/UOM and calculates differences. Start with upload on a PO to avoid mailbox integration being a prerequisite. Copilot Studio/Power Automate could later supply a monitored-mailbox intake channel, subject to explicit mailbox setup.</p>
-<p><strong>Difficulty: 4/5.</strong> Suppliers split and combine lines, use alternate item references, and distinguish ship dates from receipt dates. Currency, pack size, UOM, and ambiguous matches need explicit handling.</p>
-<p><strong>Boundaries and measurement.</strong> Purchaser confirms material changes. Receiving remains based on what physically arrived; an acknowledgment must never post a receipt. Draft messages require review initially. Detect duplicate documents and record changes since comparison. Measure minutes per acknowledgment, matching corrections, and time from supplier change to PO update. <strong>Proposed feature:</strong> <code>AI.Purchasing</code>; meter acknowledged-document jobs, with background intake separately enabled.</p>
-<p><strong>Presenter note:</strong> “AI reads the vendor’s response, shows exactly where it differs from our PO, and helps the purchaser react.”</p>
-<h3 id="contract-margin-and-cost-risk-assistant">4. Contract margin and cost-risk assistant</h3>
-<p><strong>What users would experience.</strong> From contract statistics, users ask “What is driving the difference between planned and current cost?” The response identifies the largest supported variances across material, work orders, labor, and expenses, with record links and a suggested review order.</p>
-<p><strong>Value.</strong> Users can act on cost erosion before the contract closes, and managers need less manual analysis to prepare a project review.</p>
-<p><strong>Existing foundation.</strong> Contract Statistics Management exposes released/shipped/invoiced profit measures and actual/estimated/projected remaining costs. Contract Billing Summary exposes planned and actual material/work-order/task costs, invoiced amounts, and an under/over-billed measure.</p>
-<p><strong>AI contribution and integration.</strong> AL calculates and reconciles numbers. AI turns a structured variance breakdown into an explanation, clearly separating a recorded driver from a possible cause requiring investigation. The first version needs no predictive model. A later forecast needs reliable historical snapshots and outcome data; current-state fields alone do not establish a training dataset.</p>
-<p><strong>Difficulty: 3/5 for explanation; 4/5 for forecasting.</strong> Cost recognition, committed versus posted costs, currency, and change-order scope must be consistent. Avoid double-counting a cost across order and posted views.</p>
-<p><strong>Boundaries and measurement.</strong> Restrict financial information to authorized users. No automatic price changes or accounting entries. Measure review preparation time, confirmed actionable variances, and action taken; do not count every flagged variance as recovered margin. <strong>Proposed feature:</strong> <code>AI.ContractInsights</code>; meter contract analyses and scheduled portfolio runs separately.</p>
-<p><strong>Presenter note:</strong> “We already calculate costs. AI helps a manager understand where to investigate and explains the numbers in plain language.”</p>
-<h3 id="rfq-and-quote-preparation-assistant">5. RFQ and quote preparation assistant</h3>
-<p><strong>What users would experience.</strong> An estimator compares vendor offers against requested scope, sees exclusions and missing information, and receives a draft customer quote or clarification request. Similar historical work can be retrieved as a reference, subject to customer and company boundaries.</p>
-<p><strong>Value.</strong> Faster quote turnaround and more complete bid comparisons. Hidden exclusions and expired negotiated pricing can matter more than the lowest headline price.</p>
-<p><strong>Existing foundation.</strong> RFQ generates a vendor-selection worksheet. Stored Vendor Quotes tracks negotiated cost, validity, quantities, and consumption. Vendor Quote Management filters quotes by vendor/item/date and available quantity. Project Quote and the test suite support pricing overrides, price locking, and conversion references.</p>
-<p><strong>AI contribution and integration.</strong> Interpret offers and exclusions with a model; use cERP pricing and quote-eligibility routines for price calculations. Present a comparison with “not provided” for unknown freight, lead time, or terms. Start with a few vendor formats and an existing material list.</p>
-<p><strong>Difficulty: 4/5.</strong> Scope equivalence, dimensional pricing, packages, quantity limits, and customer-specific terms make automatic quote creation harder than document summarization.</p>
-<p><strong>Boundaries and measurement.</strong> Estimator selects the supplier and approves customer pricing. No AI-generated guarantee of technical equivalence or award probability. Measure quote preparation time, clarification rounds, and errors caught before submission. <strong>Proposed feature:</strong> <code>AI.Quoting</code>; meter a bounded quote/comparison job.</p>
-<p><strong>Presenter note:</strong> “It prepares the comparison and draft; our pricing engine and estimator still decide the commercial offer.”</p>
-<h3 id="billing-readiness-and-revenue-recovery-assistant">6. Billing-readiness and revenue-recovery assistant</h3>
-<p><strong>What users would experience.</strong> Billing staff receive a queue of completed or partially completed work that may need billing review, with supporting shipments, work/time records, stored-material amounts, and change-order context. AI prepares an explanation and a checklist of missing evidence for the payment application.</p>
-<p><strong>Value.</strong> Less time assembling billing support, fewer incomplete submissions, and earlier investigation of potentially missed charges.</p>
-<p><strong>Existing foundation.</strong> AIA Billing, Lump Sum Billing Management, Contract Billing Summary, and billing-line cost/revenue factboxes provide specialized billing structures. The billing buffer includes shipped/received quantities and planned/order/WIP/actual cost fields.</p>
-<p><strong>AI contribution and integration.</strong> Deterministic rules find candidate exceptions. AI explains them and assembles a referenced narrative. A contract’s actual billing terms and approved changes must be available before suggesting a payment application; shipment alone does not prove an amount is billable.</p>
-<p><strong>Difficulty: 4/5.</strong> Progress billing, stored material, retention/retainage, credits, partial billing, and different billing methods require careful reconciliation and customer-specific examples.</p>
-<p><strong>Boundaries and measurement.</strong> No automatic invoicing, revenue recognition, or tax decisions. Proposed amounts must come from application calculations. Measure billing preparation time, confirmed omitted billable items, and rejected applications; distinguish faster billing from truly incremental revenue. <strong>Proposed feature:</strong> <code>AI.BillingReview</code>; meter contract/billing-period reviews.</p>
-<p><strong>Presenter note:</strong> “Before billing closes, help the team find what needs attention and gather the evidence needed to bill correctly.”</p>
-<h3 id="unassociated-inventory-reuse-assistant">7. Unassociated inventory reuse assistant</h3>
-<p><strong>What users would experience.</strong> In Associated Document Management (ADM), users see existing demand that may be satisfied by unassociated stock, ranked with reasons and exact differences. The assistant can also suggest reviewing a vendor return or shelving decision.</p>
-<p><strong>Value.</strong> Less stranded inventory, fewer unnecessary purchases, and less time searching for usable material.</p>
-<p><strong>Existing foundation.</strong> ADM exposes location, variant, attributes, remaining quantity/cost, vendor, comments, and document associations. It already provides Re-Associate, Write Off, Shelve, Return to Vendor, Disassemble, and transfer actions. Associated Document Management includes availability and association procedures.</p>
-<p><strong>AI contribution and integration.</strong> Exact item/variant/attribute/availability filters run first. Semantic matching helps with differing descriptions and comments, then explains candidates. If exact-match rules solve most cases, ship that benefit without requiring AI on every search.</p>
-<p><strong>Difficulty: 3/5.</strong> Data is present, but reserved ownership, dimensions, hand, finish, condition, and transfer cost can disqualify apparently similar stock. Substitution needs stronger review than an exact match.</p>
-<p><strong>Boundaries and measurement.</strong> Users approve reassociation and disposition through existing actions; AI cannot infer physical condition or certify an alternate product. Measure purchase cost avoided after an accepted reuse, inventory value redeployed, and suggestion acceptance. <strong>Proposed feature:</strong> <code>AI.InventoryReuse</code>; preserve the ordinary ADM workflow when disabled.</p>
-<p><strong>Presenter note:</strong> “Before buying again, show the team stock we already own that might satisfy this demand.”</p>
-<h3 id="natural-language-productconfiguration-assistant">8. Natural-language product/configuration assistant</h3>
-<p><strong>What users would experience.</strong> A salesperson describes a product, and the assistant converts the description into existing attribute filters/configurator answers, asking focused questions about missing details. It explains why an item is eligible and what remains unresolved.</p>
-<p><strong>Value.</strong> Faster selection, less dependence on a few experienced staff, and fewer omissions when entering complex products.</p>
-<p><strong>Existing foundation.</strong> Configurator Setup/Lines, Feature Config. Management, and Search by Attribute integration already handle dependent answers and attribute-based item filtering. Package tests cover component expansion, modification, pricing, promotion, and quote conversion.</p>
-<p><strong>AI contribution and integration.</strong> The model maps natural language to a constrained attribute schema. Existing configurator and pricing logic validates answers and calculates the result. Begin with one well-maintained product family.</p>
-<p><strong>Difficulty: 4/5.</strong> The model must recognize when language is ambiguous and respect answer dependencies, dimensional UOM, and component compatibility. Good catalog data is a prerequisite.</p>
-<p><strong>Boundaries and measurement.</strong> Product compatibility and required ratings must be supported by approved data/rules; ask rather than invent missing specifications. Measure configuration time, required-field corrections, and downstream order corrections. <strong>Proposed feature:</strong> <code>AI.ProductAssistant</code>, requiring the applicable underlying product module as well.</p>
-<p><strong>Presenter note:</strong> “Give users a conversation that drives our existing configurator, with its rules still in control.”</p>
-<h3 id="ask-cerp-operational-chatbot">9. “Ask cERP” operational chatbot</h3>
-<p><strong>What users would experience.</strong> A project manager asks “What is holding up this contract?” or “Which of my releases are due next week with outstanding purchases?” Answers include record links and an as-of time. Start with five to ten clearly supported questions using the services from #2 and #4.</p>
-<p><strong>Value.</strong> Less navigation and easier access to information for occasional users. It is also a convenient entry point to the other capabilities, rather than a separate engine for every process.</p>
-<p><strong>Existing foundation.</strong> Contract/release/material associations, status pages, quote references, and billing views provide useful structured relationships. A conversational service layer and its permission handling are proposed additions, not verified existing APIs.</p>
-<p><strong>AI contribution and integration.</strong> A Copilot Studio agent can call narrowly defined tools such as <code>GetReleaseBlockers</code> and <code>GetContractCostSummary</code>; these names are proposed. Retrieve live transactional values through authorized cERP services. Search approved documents for explanatory context. Do not rely on a periodically embedded copy of the ERP database for current balances or quantities.</p>
-<p><strong>Difficulty: 3/5 for a bounded read-only assistant; 5/5 for unrestricted transactions.</strong> Identity mapping, company selection, security filters, and tool design drive complexity. Extending the built-in BC Copilot chat is not assumed; use a supported custom experience. See the Microsoft integration notes below.</p>
-<p><strong>Boundaries and measurement.</strong> The assistant must see only what the user can see, including retrieved snippets and cached answers. It should decline unsupported questions and distinguish “no access” from “no records.” Measure verified answer accuracy, time to answer, and repeat use. <strong>Proposed feature:</strong> <code>AI.AskCERP</code>; invoking premium tools also requires their specific entitlements.</p>
-<p><strong>Presenter note:</strong> “The chatbot is the front door. Its usefulness comes from trustworthy cERP functions underneath it.”</p>
-<h3 id="field-service-and-work-order-closeout-assistant">10. Field-service and work-order closeout assistant</h3>
-<p><strong>What users would experience.</strong> A technician enters short notes about a visit. AI prepares a customer-readable work summary and proposes time-entry coding, unresolved issues, or a follow-up request. A supervisor reviews the draft before submission/posting. Voice capture is an optional later addition.</p>
-<p><strong>Value.</strong> Less end-of-day paperwork, more consistent job records, and better information for billing and the next visit.</p>
-<p><strong>Existing foundation.</strong> Time Entry Line includes resource, document/contract references, labor type, dates/times, review status, comments, completion, and follow-up indicators. Work-order and service extensions supply related workflow context. Work-order tests cover creation and completion/posting.</p>
-<p><strong>AI contribution and integration.</strong> Convert notes into a validated draft schema, summarize relevant job history, and flag omissions. A mobile or Teams surface could use Copilot Studio; the specific mobile integration has not been reviewed. Speech transcription would need a separate service/integration.</p>
-<p><strong>Difficulty: 3/5 for text drafts; 4/5 with mobile/voice.</strong> Matching the correct task, handling short field lengths, and integrating the existing review process are key. Offline operation and attachments add work.</p>
-<p><strong>Boundaries and measurement.</strong> Do not invent time worked, parts used, or completion. Preserve original notes alongside an edited narrative with appropriate retention. Measure administrative time per visit, supervisor correction rate, and missing follow-ups. <strong>Proposed feature:</strong> <code>AI.FieldCloseout</code>; meter text jobs, with separate audio limits if added.</p>
-<p><strong>Presenter note:</strong> “Help technicians turn brief notes into complete records without making them repeat the same information in several places.”</p>
-<h3 id="capacity-and-delivery-planning-assistant">11. Capacity and delivery planning assistant</h3>
-<p><strong>What users would experience.</strong> A planner asks why a job cannot fit a proposed date, or compares a small set of scheduling alternatives after a late component. The response explains constraints and the consequences for affected work and deliveries.</p>
-<p><strong>Value.</strong> Potentially substantial for customers with busy shops or delivery fleets, but less universal and substantially harder than an explanatory assistant.</p>
-<p><strong>Existing foundation.</strong> Capacity Schedule Management derives latest expected component receipt dates from outstanding purchase lines. Capacity groups, delivery routes, trucks, zones, and release delivery references provide part of the scheduling model.</p>
-<p><strong>AI contribution and integration.</strong> Start by explaining existing constraints. A later optimization service would calculate feasible plans using explicit capacities, durations, locations, and priorities; a language model would capture the request and explain alternatives. A general language model should not be the scheduling solver.</p>
-<p><strong>Difficulty: 5/5 for optimization; 3/5 for explanation only.</strong> Reliable process times, resource calendars, travel times, loading limits, and customer windows need validation or additional data. Their completeness is not established by the code review.</p>
-<p><strong>Boundaries and measurement.</strong> Planner approves changes. Recheck availability before saving any proposed schedule. Measure planning time, schedule adherence, utilization, and actual delivery cost, accounting for demand changes. <strong>Proposed feature:</strong> <code>AI.Planning</code>, with underlying Capacity/Delivery entitlements and a separate allowance for optimization runs.</p>
-<p><strong>Presenter note:</strong> “First explain what prevents a plan. Once the constraints are reliable, calculate and compare better alternatives.”</p>
-<h3 id="cerp-help-and-onboarding-chatbot">12. cERP help and onboarding chatbot</h3>
-<p><strong>What users would experience.</strong> Users ask how to perform a cERP task and receive short instructions with links to approved documentation relevant to their product version and enabled modules.</p>
-<p><strong>Value.</strong> Broad access to routine answers and faster onboarding. It ranks below the transaction-focused ideas because its impact is less directly tied to project execution, cash, and margin.</p>
-<p><strong>Existing foundation.</strong> The app manifest references cERP help, and the test catalog provides business-language descriptions of important workflows. The actual help corpus, access rights, and freshness have not been audited. The catalog is evidence of covered behaviors, not a complete end-user manual.</p>
-<p><strong>AI contribution and integration.</strong> Copilot Studio with curated retrieval and citations. Start with approved instructions for a small set of common tasks, label supported versions, and give users a clear escalation path when evidence is missing.</p>
-<p><strong>Difficulty: 2/5.</strong> Content preparation, versioning, and answer evaluation matter more than ERP writes. A poorly maintained help corpus will produce a poor assistant.</p>
-<p><strong>Boundaries and measurement.</strong> Keep this scope distinct from live business-data questions in #9. Do not expose private support cases as shared knowledge. Measure correct resolutions and support deflection against sampled cases, not just chat volume. <strong>Proposed feature:</strong> <code>AI.Help</code>; a candidate for an included tier with a fair-use allowance.</p>
-<p><strong>Presenter note:</strong> “This can make the product easier to learn, but it should complement the high-value process assistants.”</p>
-<h2 id="microsoft-integration-approach">Microsoft integration approach</h2>
-<p>The following is a proposed architecture, informed by current Microsoft documentation checked October 18, 2026. Validate the exact APIs against the BC versions you support before implementation.</p>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Recommended responsibility</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>cERP AL services</td>
-<td>Read authorized records; calculate facts; validate proposals; execute approved business actions; preserve existing posting rules</td>
-</tr>
-<tr>
-<td>Embedded BC AI experience</td>
-<td>Contextual actions such as Explain readiness and Review acknowledgment; show sources and before/after values</td>
-</tr>
-<tr>
-<td>Foundry-hosted model service</td>
-<td>Interpret text, propose structured output, summarize grounded facts; choose a model per capability based on measured quality and cost</td>
-</tr>
-<tr>
-<td>Document extraction</td>
-<td>Read text/tables and source locations from supported documents before matching them to cERP records</td>
-</tr>
-<tr>
-<td>Copilot Studio</td>
-<td>Optional conversational surface and connector-based orchestration, calling the same bounded cERP services</td>
-</tr>
-<tr>
-<td>cERP AI service/gateway</td>
-<td>Authenticate, enforce commercial access, route approved models, reserve usage, meter requests, and apply global/per-customer shutdown controls</td>
-</tr>
-</tbody>
-</table>
-<p>Business Central's <code>System.AI</code> module supports custom Azure OpenAI capabilities and registration on the Copilot &amp; agent capabilities page. Its documentation distinguishes custom chat completion from the built-in BC Copilot chat and currently states that the latter preview is not extensible. Therefore, do not promise these ideas as plug-ins to that existing chat pane. A custom page experience or Copilot Studio agent is a separate design choice. Also, do not assume every Foundry model or agent endpoint is interchangeable with AL's Azure OpenAI API. <a href="https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/ai-build-capability-in-al">Microsoft: build a capability in AL</a></p>
-<p>Copilot Studio supports connector tools, and Microsoft provides a Business Central connector. Custom cERP tables and business actions still need deliberately exposed, authorized APIs or a custom connector; merely connecting BC does not establish that every cERP workflow is available. Evaluate user-authenticated connections versus a scoped service identity for scheduled work. <a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-connectors">Copilot Studio connectors</a>, <a href="https://learn.microsoft.com/en-us/connectors/dynamicssmbsaas/">Business Central connector</a></p>
-<p>Document Intelligence's layout model can extract document structure and tables. Treat that output as the start of matching and validation, not proof that an item or quantity is correct. <a href="https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/layout?view=doc-intel-4.0.0">Document layout analysis</a></p>
-<p>An AI gateway can centralize model access, routing, and usage controls. Azure deployment quotas do not replace a cERP customer entitlement and usage ledger. <a href="https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/generative-ai-gateway-multiple-models">Microsoft gateway architecture</a>, <a href="https://learn.microsoft.com/en-us/azure/ai-foundry/configuration/enable-ai-api-management-gateway-portal?view=foundry">Foundry AI Gateway configuration</a></p>
-<p><strong>Shared implementation requirements.</strong> Return structured proposals with source IDs; validate schemas and allowed values before acting. Treat uploaded documents and retrieved text as untrusted data, never as instructions to override tools or permissions. Apply tenant/company/user scope before retrieval, including search indexes and caches. For writes, show proposed changes, obtain the workflow's approval, then revalidate current records and call existing business logic. Long document jobs should run asynchronously with bounded retries, duplicate detection, and clear status. Keep ordinary cERP operations available when AI is unavailable.</p>
-<h2 id="gating-optional-or-paid-ai">Gating optional or paid AI</h2>
-<h3 id="using-cerp-feature-controls">Using cERP feature controls</h3>
-<p>cERP already has administrator-facing feature controls and a commercial entitlement pattern. AI capabilities should build on those concepts while treating subscription entitlement, administrator enablement, user permission, and consumption limits as separate decisions.</p>
-<p>Use Feature Activation as the main cERP entry point, with links to detailed AI settings and usage. Where Business Central’s native Copilot capability controls apply, honor both sets of controls. Paid access and usage must also be enforced in the AI execution service so page visibility alone never becomes the security or billing boundary.</p><h3 id="recommended-runtime-gate">Recommended runtime gate</h3>
-<p>Allow an AI operation only when <strong>all</strong> applicable conditions hold:</p>
-<ol>
-<li>The authenticated customer/environment has a current entitlement to the capability and any required base module.</li>
-<li>An administrator has enabled the capability, and the company's required AI setup/consent is complete.</li>
-<li>The user or background-job identity has the necessary capability and record permissions.</li>
-<li>The relevant registered BC Copilot capability is active, where that integration path is used.</li>
-<li>The operation is allowed for this deployment: read, draft, or approved write; the selected model belongs to the permitted model policy.</li>
-<li>Sufficient usage allowance and rate capacity remain, and no global/customer/capability stop switch is active.</li>
-</ol>
-<p>Check this before sending customer data to a model, and check permissions/current state again before applying a result. Use one shared policy path for page actions, APIs, chatbot tools, and job queues. The backend must derive tenant identity from authentication and verify it against the entitlement; a client-supplied tenant/company field alone is not authority. Hiding a button is useful presentation, but not enforcement.</p>
-<p><strong>Suggested administration fields:</strong> capability, entitled plan, subscription/trial expiry, environment/company scope, enabled, permitted user group, read/draft/write mode, background processing enabled, usage this period, remaining allowance, budget cap, model policy, last successful entitlement check, and last error. Show entitlement as read-only information from the authoritative service. Give “not included,” “disabled by your administrator,” “permission required,” and “allowance exhausted” distinct explanations.</p>
-<p>Use Feature Activation as the main cERP entry point, linking to detailed AI settings and usage. Native BC capability controls and cERP controls should both be honored where applicable; neither should silently re-enable the other. Standard BC feature-rollout switches should not become the subscription ledger.</p>
-<h3 id="suggested-commercial-packaging-for-discussion-not-final-pricing">Suggested commercial packaging — for discussion, not final pricing</h3>
-<table>
-<thead>
-<tr>
-<th>Package</th>
-<th>Possible contents</th>
-<th>Commercial unit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Included AI Help</td>
-<td>Curated help; perhaps a small sample allowance for release explanations</td>
-<td>Fair-use allowance per customer</td>
-</tr>
-<tr>
-<td>AI Operations</td>
-<td>Release readiness, purchasing review, inventory reuse, operational questions</td>
-<td>Customer subscription with pooled usage; optional user restrictions</td>
-</tr>
-<tr>
-<td>AI Commercial</td>
-<td>Submittal/revision review, quote assistance, contract insights, billing review</td>
-<td>Add-on subscription plus bounded document/analysis credits</td>
-</tr>
-<tr>
-<td>AI Field and Planning</td>
-<td>Closeout assistance and, later, capacity/delivery optimization</td>
-<td>Optional modules with separate audio/optimization allowances</td>
-</tr>
-<tr>
-<td>Enterprise deployment option</td>
-<td>Customer-owned Azure resources, dedicated capacity, or special isolation</td>
-<td>Separate agreement; cERP capability licensing still applies</td>
-</tr>
-</tbody>
-</table>
-<p>Keep individual capability entitlements underneath bundles so products can be regrouped without code rewrites. A user with <code>AI.AskCERP</code> must not obtain a premium billing or submittal function merely by asking for it in chat. Reuse the existing base-module entitlement for features such as Field Service, Project Sales Quote, Capacity Scheduling, and Delivery Scheduling.</p>
-<p><strong>Meter business work in a way customers understand.</strong> For example, one acknowledgment review or a bounded revision job can consume a stated number of credits, with maximum pages/lines/size defined before the run. Internally record actual model input/output usage, extraction pages, search/storage charges where relevant, retries, and job status. Reserve allowance atomically before a job, reconcile afterward, and use an idempotency key so duplicate submissions do not create duplicate customer charges. Define how failed/cancelled jobs are treated; provider costs can still occur even if the customer is not charged.</p>
-<p>Offer a fixed included allowance and an explicit overage option. Warn near the limit; at the hard cap, stop new AI work and preserve the manual workflow. Scheduled runs need their own budgets and concurrency limits so they cannot consume all interactive capacity. A limited trial should have both an expiry and a usage ceiling. Tenant/environment-specific accounting should prevent sandbox copies from duplicating production allowances.</p>
-<p><strong>Gate model cost separately from product access.</strong> A capability should normally select an approved deployment through server policy: a lower-cost model for short explanations; a more capable model only when evaluation justifies it for difficult documents. Set input/output, page, tool-call, retry, and time limits. Any escalation must fit the customer's remaining budget. Do not make a model name the permanent subscription SKU, since deployments and model versions change.</p>
-<p>For an AL capability using partner-owned Azure OpenAI resources, Microsoft's documented billing options include <code>Custom Billed</code>; the resource choice and billing type must agree. This registration does not create a cERP subscription, collect payment, or meter your bundles. Copilot Studio and other Azure services also require a separate licensing/cost assessment; an existing Microsoft 365 Copilot license should not be assumed to cover the proposed solution. <a href="https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/ai-build-capability-in-al">BC capability billing documentation</a></p>
-<p>Before choosing prices, measure <strong>cost per accepted business result</strong>, including document extraction, model use, search, orchestration, hosting, retries, and support. “Bring your own Azure” changes who pays infrastructure costs; it does not eliminate integration, support, or cERP entitlement requirements.</p>
-<h2 id="suggested-delivery-sequence-and-decision-points">Suggested delivery sequence and decision points</h2>
-<table>
-<thead>
-<tr>
-<th>Stage</th>
-<th>Concrete outcome</th>
-<th>Evidence needed before expanding</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Discovery and shared foundation</td>
-<td>Select pilot customers; baseline one workflow; define read services, permissions, feature gates, usage accounting, and evaluation cases</td>
-<td>Confirm data access, expected volume, customer value, and acceptable per-job cost</td>
-</tr>
-<tr>
-<td>First pilot: #9 powered by #2</td>
-<td>Launch a bounded Ask cERP experience whose first question set explains project and release readiness with accurate blockers and linked evidence</td>
-<td>Compare with expert-reviewed projects/releases; include partial receipt/shipment, missing dates, assignments, quote expiry, cost variance, tasks, and denied-access cases</td>
-</tr>
-<tr>
-<td>Second pilot: proactive PM brief</td>
-<td>Run the validated checks on a schedule and notify the right user about new or materially changed exceptions</td>
-<td>Demonstrate useful lead time, low false-alert burden, duplicate suppression, correct ownership, and bounded consumption</td>
-</tr>
-<tr>
-<td>Expand reusable capabilities</td>
-<td>Add reviewed release-assignment suggestions, pricing/cost proposals, and billing/SOV recommendations from the meeting-selected backlog</td>
-<td>Verified answers, bounded latency/cost, correct role/company scope, and predictable disable/cap behavior</td>
-</tr>
-<tr>
-<td>Later automation</td>
-<td>Approved field updates, additional document types, and eventually planning optimization</td>
-<td>Proven draft quality, explicit execution rules, concurrency checks, and auditable outcomes</td>
-</tr>
-</tbody>
-</table>
-<p>Do not introduce automatic posting as the initial success criterion. A read-only or draft assistant can generate substantial value and provides a cleaner way to measure whether users trust the results.</p>
-<p>For an initial evaluation, collect a representative sample of real, appropriately handled cases and record the expert answer before testing. Include clean and ambiguous documents, expired quotes, mismatched units, restricted records, changed records, and failures. Suggested acceptance goals should be agreed with the process owner; the code review cannot supply a defensible universal accuracy percentage.</p>
-<p>For a business case, calculate <strong>monthly labor value = eligible monthly cases × measured net minutes saved per case ÷ 60 × loaded hourly cost</strong>. Net minutes saved must include review and correction. Add separately verified rework avoided, inventory reused, or revenue recovered; avoid counting the same benefit in several ideas. Subtract full operating and support costs.</p>
-<h2 id="talking-points-and-decisions-for-the-meeting">Talking points and decisions for the meeting</h2>
-<ul>
-<li><strong>Opening:</strong> “Our best AI opportunities are where someone must read messy information or assemble a decision from several cERP records. The existing business rules give us a strong foundation.”</li>
-<li><strong>Priority:</strong> Implement the CERP-5000 starting backlog first: bounded Ask cERP questions, project/release readiness, then scheduled PM alerts. Select process owners to supply the question list, fields, reports, examples, and expected answers.</li>
-<li><strong>Experience:</strong> Start with a supported Copilot-style conversational surface backed by narrow cERP tools, and expose the same explanations contextually inside relevant cERP pages. Do not build a free-form chatbot with unrestricted database or transaction access.</li>
-<li><strong>Commercial decision:</strong> Decide what should be included versus an add-on, who owns the Azure deployment, and whether overages are allowed. Do not commit to a price before metering representative cases.</li>
-<li><strong>Control decision:</strong> Agree that paid entitlement, administrator enablement, user permissions, and usage limits are separate controls. Decide whether enablement is company-specific despite the existing shared activation table.</li>
-<li><strong>Scope decision:</strong> Keep posting and deterministic calculations in cERP. Approve specific draft/write capabilities later, based on evidence from the pilot.</li>
-</ul>
-<h2 id="review-status">Review status</h2><p>This brief now reflects the October 19 meeting direction and CERP-5000 as the agreed starting backlog. It does not represent an implemented AI integration, subscription, scheduled job, or automated decision process.</p></main></div><div class="footer">AI in cERP · Post-meeting product brief · Updated October 19, 2026</div></body></html>
 
+<h2 id="about-this-review">About this review</h2>
+<p>This report is based on a targeted review of cERP workflows covering contracts, document intake, release schedules, purchasing, quoting, billing, inventory, configuration, field service, work orders, and scheduling. The opportunities should be validated with representative customer processes, data, and measurable outcomes before implementation.</p>
+<p><strong>Ranking reflects the agreed starting sequence and expected business value.</strong> The first five opportunities are the initial backlog identified in the October 19 discussion and CERP-5000. The remaining ideas are ordered by likely labor savings, financial or operational consequence, frequency, and breadth of users affected.</p>
+<p><strong>Difficulty scale:</strong> 1 = low; 2 = low–medium; 3 = medium; 4 = high; 5 = very high. Difficulty is relative and should be refined during discovery with representative customer data.</p>
+
+<h2 id="ranking-at-a-glance">Ranking at a glance</h2>
+<table>
+<thead><tr><th>Rank</th><th>Opportunity</th><th>Primary user benefit</th><th>Expected impact</th><th>Difficulty</th><th>Suggested initial form</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Ask cERP Copilot</td><td>Answers across contract and project data without manual navigation</td><td>Very high</td><td>3/5 — Medium</td><td>Bounded, read-only questions with supporting record links</td></tr>
+<tr><td>2</td><td>Project Manager and release-readiness agent</td><td>Find roadblocks before they delay shipping or installation</td><td>Very high</td><td>3/5 interactive; 4/5 proactive</td><td>Project summary and exception brief</td></tr>
+<tr><td>3</td><td>Release assignment assistant</td><td>Reduce material left unassigned because of complex filters</td><td>High</td><td>4/5 — High</td><td>Reviewed assignment suggestions</td></tr>
+<tr><td>4</td><td>Pricing and costing assistant</td><td>Respond faster and more consistently to vendor cost changes</td><td>High</td><td>4/5 — High</td><td>Proposed updates or reviewable export</td></tr>
+<tr><td>5</td><td>Billing and schedule-of-values assistant</td><td>Reduce spreadsheet work and accelerate accurate billing preparation</td><td>Very high</td><td>4/5 — High</td><td>Billing-line and amount recommendations</td></tr>
+<tr><td>6</td><td>Submittal intake and revision-impact assistant</td><td>Less rekeying and fewer missed changes after ordering</td><td>Very high</td><td>4/5 — High</td><td>Document review and proposed changes</td></tr>
+<tr><td>7</td><td>Vendor acknowledgment and purchasing follow-up</td><td>Faster PO updates and earlier response to supplier changes</td><td>Very high</td><td>4/5 — High</td><td>Compare acknowledgment with PO; draft follow-up</td></tr>
+<tr><td>8</td><td>Contract margin and cost-risk assistant</td><td>Surface cost deterioration while action is still possible</td><td>High</td><td>3/5 — Medium</td><td>Evidence-based variance explanation</td></tr>
+<tr><td>9</td><td>RFQ and quote preparation assistant</td><td>Faster bids and better visibility into scope exclusions</td><td>High</td><td>4/5 — High</td><td>Vendor comparison and draft quote</td></tr>
+<tr><td>10</td><td>Unassociated inventory reuse assistant</td><td>Reduce avoidable purchases and stranded stock</td><td>High</td><td>3/5 — Medium</td><td>Ranked reuse or disposition suggestions</td></tr>
+<tr><td>11</td><td>Natural-language product/configuration assistant</td><td>Help users find and configure the right item</td><td>Medium–high</td><td>4/5 — High</td><td>Guided selection using existing rules</td></tr>
+<tr><td>12</td><td>Field-service and work-order closeout assistant</td><td>Reduce paperwork and improve completeness of job records</td><td>Medium–high</td><td>3/5 — Medium</td><td>Draft notes, time, and follow-up tasks</td></tr>
+<tr><td>13</td><td>Capacity and delivery planning assistant</td><td>Explain constraints and compare feasible scheduling options</td><td>Medium–high</td><td>5/5 — Very high</td><td>Read-only constraint explanation first</td></tr>
+<tr><td>14</td><td>cERP help and onboarding chatbot</td><td>Faster answers and fewer routine support interruptions</td><td>Medium</td><td>2/5 — Low–medium</td><td>Answers from approved product guidance</td></tr>
+</tbody>
+</table>
+
+<h2 id="detailed-opportunities">Detailed opportunities</h2>
+
+<h3 id="ask-cerp-copilot">1. Ask cERP Copilot</h3>
+<p><strong>What users would experience.</strong> Users ask ordinary questions about contracts, customers, orders, projects, materials, alerts, and reports, then receive a concise answer with the records behind it.</p>
+<p><strong>Example:</strong> “What is the current status of this contract, what is overdue, and what needs my attention today?”</p>
+<p><strong>Why start here.</strong> It provides a simple front door to cERP information and establishes the trusted questions and answers that later agents can reuse.</p>
+<p><strong>Difficulty: 3/5.</strong> The first version should support a clearly defined question set rather than promising that it can answer anything.</p>
+<p><strong>Explanation note:</strong> “First, make cERP easy to ask. Every answer should show where the information came from.”</p>
+
+<h3 id="project-manager-and-release-readiness-agent">2. Project Manager and release-readiness agent</h3>
+<p><strong>What users would experience.</strong> A project manager receives a status summary and a short list of roadblocks, including overdue, late, or unpurchased material; cost variances; expiring vendor quotes; overdue tasks; and releases at risk.</p>
+<p><strong>Example:</strong> “What could prevent this job from shipping, and which items require action this week?”</p>
+<p><strong>Why it matters.</strong> Earlier visibility reduces expediting, incomplete releases, installation delays, and time spent reconstructing project status from several screens and reports.</p>
+<p><strong>Difficulty: 3/5 for an on-demand summary; 4/5 for proactive alerts.</strong> Start when a user asks, then schedule alerts after the team trusts the results.</p>
+<p><strong>Explanation note:</strong> “The agent should act like a project review assistant: find exceptions, explain them, and point the user to the right records.”</p>
+
+<h3 id="release-assignment-assistant">3. Release assignment assistant</h3>
+<p><strong>What users would experience.</strong> When a user creates a release, cERP suggests the material that belongs on it based on the release name and available project information.</p>
+<p><strong>Example:</strong> A release named “hollow metal frames” produces a proposed set of matching items using category, product group, vendor, phase, and other relevant details.</p>
+<p><strong>Why it matters.</strong> Release filters vary by project and are easy to apply incompletely, leaving material unassigned and creating downstream surprises.</p>
+<p><strong>Difficulty: 4/5.</strong> Suggestions must work across different naming habits and project structures, and users need a clear review of included and excluded material.</p>
+<p><strong>Explanation note:</strong> “The goal is not to hide the filters. It is to propose the right result and show the user why each item was selected.”</p>
+
+<h3 id="pricing-and-costing-assistant">4. Pricing and costing assistant</h3>
+<p><strong>What users would experience.</strong> The assistant identifies vendor cost increases and prepares proposed purchase-price, cost, and—when appropriate—sales-price adjustments.</p>
+<p><strong>Example:</strong> “This vendor increased these products by 6%. Show the affected price-list entries and calculate proposed updates using our chosen markup.”</p>
+<p><strong>Why it matters.</strong> It shortens a repetitive process, improves consistency, and helps teams respond before outdated costs erode margin.</p>
+<p><strong>Difficulty: 4/5.</strong> Customers may maintain pricing differently, so the workflow must accommodate the price lists and review process actually in use.</p>
+<p><strong>Explanation note:</strong> “Let AI prepare the change set; keep publishing and approval with the user.”</p>
+
+<h3 id="billing-and-schedule-of-values-assistant">5. Billing and schedule-of-values assistant</h3>
+<p><strong>What users would experience.</strong> The assistant turns contract information into proposed billing lines by phase, floor, or another project structure and recommends billing amounts based on progress.</p>
+<p><strong>Example:</strong> Break a hardware contract across floors, calculate completed and in-progress work, include scheduled-to-ship amounts, and propose the current percentage and dollars to bill.</p>
+<p><strong>Why it matters.</strong> Teams currently rely on manual Excel work and multiple reports whose results may require additional checking. Better preparation can reduce effort and shorten the path to invoicing.</p>
+<p><strong>Difficulty: 4/5.</strong> Billing structures differ, and recommendations must be explainable and reviewed before use.</p>
+<p><strong>Explanation note:</strong> “This is a billing-preparation assistant, not an automatic invoice poster.”</p>
+
+<h3 id="submittal-intake-and-revision-impact-assistant">6. Submittal intake and revision-impact assistant</h3>
+<p><strong>What users would experience.</strong> A user brings in a submittal, material schedule, or revision. cERP proposes item and vendor matches, flags missing information, and summarizes what was added, removed, or changed.</p>
+<p><strong>Example:</strong> “A revised schedule changes the finish on twelve openings. Show which are still open, already ordered, or likely to require a change.”</p>
+<p><strong>Why it matters.</strong> A missed revision can affect purchasing, fabrication, delivery, installation, and billing. Catching it early prevents downstream rework.</p>
+<p><strong>Difficulty: 4/5.</strong> Supplier descriptions, dimensions, finishes, and revision formats vary significantly.</p>
+<p><strong>Explanation note:</strong> “AI helps users understand messy incoming information and the consequences of a revision.”</p>
+
+<h3 id="vendor-acknowledgment-and-purchasing-follow-up">7. Vendor acknowledgment and purchasing follow-up</h3>
+<p><strong>What users would experience.</strong> Upload a vendor acknowledgment and receive a comparison against the purchase order: quantities, prices, dates, substitutions, freight, and exceptions needing follow-up.</p>
+<p><strong>Example:</strong> “The supplier changed the promised date and substituted two items. Show the differences and draft the questions we should send back.”</p>
+<p><strong>Why it matters.</strong> Faster review catches supplier changes before they become project delays or unexpected costs.</p>
+<p><strong>Difficulty: 4/5.</strong> Vendor formats vary, and missing information must be called out rather than guessed.</p>
+<p><strong>Explanation note:</strong> “Compare what we ordered with what the vendor says they will deliver.”</p>
+
+<h3 id="contract-margin-and-cost-risk-assistant">8. Contract margin and cost-risk assistant</h3>
+<p><strong>What users would experience.</strong> A manager sees which contracts are losing margin and receives a plain-language explanation of the largest cost or revenue changes.</p>
+<p><strong>Example:</strong> “Which active contracts moved outside their expected margin this month, and what changed?”</p>
+<p><strong>Why it matters.</strong> A ranked explanation turns a large financial review into a focused list of projects where action may still be possible.</p>
+<p><strong>Difficulty: 3/5.</strong> The challenge is agreeing on the right comparison points and explaining them consistently.</p>
+<p><strong>Explanation note:</strong> “Show the movement, the records behind it, and where management should investigate first.”</p>
+
+<h3 id="rfq-and-quote-preparation-assistant">9. RFQ and quote preparation assistant</h3>
+<p><strong>What users would experience.</strong> The assistant prepares RFQ packages, compares vendor responses, flags exclusions, and helps assemble a draft customer quote.</p>
+<p><strong>Example:</strong> “Compare these three vendor offers and highlight missing freight, lead time, substitutions, and scope differences.”</p>
+<p><strong>Why it matters.</strong> It reduces document handling and makes omissions easier to see before a quote is finalized.</p>
+<p><strong>Difficulty: 4/5.</strong> Vendor wording and quote formats differ, and incomplete responses must remain visibly incomplete.</p>
+<p><strong>Explanation note:</strong> “AI organizes and compares the offers; cERP remains the source for approved pricing.”</p>
+
+<h3 id="unassociated-inventory-reuse-assistant">10. Unassociated inventory reuse assistant</h3>
+<p><strong>What users would experience.</strong> Before purchasing new material, cERP suggests available inventory that may satisfy the requirement and explains the match.</p>
+<p><strong>Example:</strong> “We need this item for an upcoming release. Do we already own compatible material that is not committed elsewhere?”</p>
+<p><strong>Why it matters.</strong> Better reuse can reduce avoidable purchasing, carrying costs, and stranded project inventory.</p>
+<p><strong>Difficulty: 3/5.</strong> Suggestions need enough information to distinguish a true substitute from a merely similar item.</p>
+<p><strong>Explanation note:</strong> “Make existing inventory visible at the moment someone is about to buy again.”</p>
+
+<h3 id="natural-language-product-configuration-assistant">11. Natural-language product/configuration assistant</h3>
+<p><strong>What users would experience.</strong> A user describes what is needed in plain language, and the assistant guides them through the relevant configuration choices and compatible products.</p>
+<p><strong>Example:</strong> “I need an exterior opening with this fire rating and finish. What options fit, and what information is still missing?”</p>
+<p><strong>Why it matters.</strong> It makes the Configurator easier for newer users while helping experienced users move through complex selections faster.</p>
+<p><strong>Difficulty: 4/5.</strong> The assistant must respect configuration rules and clearly distinguish required facts from recommendations.</p>
+<p><strong>Explanation note:</strong> “AI should make the Configurator conversational, not replace the rules that make a configuration valid.”</p>
+
+<h3 id="field-service-and-work-order-closeout-assistant">12. Field-service and work-order closeout assistant</h3>
+<p><strong>What users would experience.</strong> Technicians or coordinators turn field notes into a structured closeout draft containing work performed, time, materials, issues, and follow-up actions.</p>
+<p><strong>Example:</strong> “Summarize today’s visit, identify unresolved items, and prepare the work-order closeout for review.”</p>
+<p><strong>Why it matters.</strong> Less paperwork improves record completeness and speeds follow-up, billing, and customer communication.</p>
+<p><strong>Difficulty: 3/5; 4/5 if voice and mobile capture are included.</strong></p>
+<p><strong>Explanation note:</strong> “Capture the technician’s knowledge while it is fresh and turn it into a reviewable business record.”</p>
+
+<h3 id="capacity-and-delivery-planning-assistant">13. Capacity and delivery planning assistant</h3>
+<p><strong>What users would experience.</strong> Planners ask why a date is at risk and compare possible scheduling or delivery alternatives.</p>
+<p><strong>Example:</strong> “What constraints prevent this delivery from moving to Thursday, and what would need to change?”</p>
+<p><strong>Why it matters.</strong> Clearer constraint explanations can save planning time; later optimization could improve utilization and delivery performance.</p>
+<p><strong>Difficulty: 5/5 for optimization; 3/5 for explanation only.</strong> Reliable capacity, duration, route, and priority data is essential.</p>
+<p><strong>Explanation note:</strong> “First explain the schedule. Optimize it only after the underlying constraints are reliable.”</p>
+
+<h3 id="cerp-help-and-onboarding-chatbot">14. cERP help and onboarding chatbot</h3>
+<p><strong>What users would experience.</strong> Users ask how to complete a cERP task and receive concise, version-appropriate instructions with links to approved guidance.</p>
+<p><strong>Example:</strong> “How do I create a release and confirm that all required material has been assigned?”</p>
+<p><strong>Why it matters.</strong> It shortens onboarding and reduces interruptions for routine product questions.</p>
+<p><strong>Difficulty: 2/5.</strong> The main requirement is a maintained, approved knowledge base.</p>
+<p><strong>Explanation note:</strong> “A help assistant is useful and achievable, but the operational agents above have a more direct effect on projects, cash, and margin.”</p>
+
+<h2 id="suggested-delivery-sequence">Suggested delivery sequence</h2>
+<table>
+<thead><tr><th>Stage</th><th>Business outcome</th><th>Evidence needed before expanding</th></tr></thead>
+<tbody>
+<tr><td>1. Define the first question set</td><td>Agree on the project and release questions users most need answered, including the reports, fields, examples, and expected answers behind them.</td><td>Process owners confirm the answers and identify representative projects for testing.</td></tr>
+<tr><td>2. Launch Ask cERP with project/release readiness</td><td>Users receive trustworthy, read-only answers with a concise explanation and supporting records.</td><td>Experts agree the answers are useful, understandable, and consistently scoped to the right customer, company, and user.</td></tr>
+<tr><td>3. Add the proactive PM brief</td><td>The same proven checks notify users about new or materially changed roadblocks without waiting for a question.</td><td>Alerts arrive early enough to help, reach the right owner, and do not create excessive noise.</td></tr>
+<tr><td>4. Add release-assignment suggestions</td><td>Users receive a reviewable proposal for assigning material to releases.</td><td>Accepted suggestions save time without omitting, duplicating, or incorrectly moving material.</td></tr>
+<tr><td>5. Pilot pricing and billing assistance</td><td>Users receive reviewable pricing changes and billing or schedule-of-values recommendations.</td><td>Process owners confirm calculations, review effort, time saved, and the handling of customer-specific variations.</td></tr>
+<tr><td>6. Expand by demonstrated value</td><td>Introduce the remaining opportunities where customer volume, pain, and measurable return justify the work.</td><td>Each expansion has a named owner, baseline, success measure, and clear approval boundary.</td></tr>
+</tbody>
+</table>
+<p>The first releases should assist decisions and prepare reviewed work. Automatic posting or other irreversible actions should not be the initial measure of success.</p>
+<p>For a business case, measure net time saved after review and correction, then add separately verified benefits such as avoided rework, recovered revenue, or reduced purchases. Avoid counting the same benefit in more than one opportunity.</p>
+</main>
+</div>
+<div class="footer">AI in cERP · Ranked opportunities · Updated October 19, 2026</div>
+</body>
+</html>
