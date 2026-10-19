@@ -119,7 +119,7 @@ li { margin: .38rem 0; }
 <li class="toc-level-2"><a href="#detailed-opportunities">Detailed opportunities</a></li>
 <li class="toc-level-3"><a href="#ask-cerp-copilot">1. Ask cERP Copilot</a></li>
 <li class="toc-level-3"><a href="#project-manager-and-release-readiness-agent">2. Project Manager and release-readiness agent</a></li>
-<li class="toc-level-3"><a href="#release-assignment-assistant">3. Release assignment assistant</a></li>
+<li class="toc-level-3"><a href="#prompt-driven-release-creation-assistant">3. Prompt-driven release creation assistant</a></li>
 <li class="toc-level-3"><a href="#pricing-and-costing-assistant">4. Pricing and costing assistant</a></li>
 <li class="toc-level-3"><a href="#billing-and-schedule-of-values-assistant">5. Billing and schedule-of-values assistant</a></li>
 <li class="toc-level-3"><a href="#submittal-intake-and-revision-impact-assistant">6. Submittal intake and revision-impact assistant</a></li>
@@ -153,7 +153,7 @@ Updated with the October 19 AI discussion and <a href="https://accessit.atlassia
 <tbody>
 <tr><td>1</td><td>Ask cERP Copilot</td><td>Answers across contract and project data without manual navigation</td><td>Very high</td><td>3/5 — Medium</td><td>Bounded, read-only questions with supporting record links</td></tr>
 <tr><td>2</td><td>Project Manager and release-readiness agent</td><td>Find roadblocks before they delay shipping or installation</td><td>Very high</td><td>3/5 interactive; 4/5 proactive</td><td>Project summary and exception brief</td></tr>
-<tr><td>3</td><td>Release assignment assistant</td><td>Reduce material left unassigned because of complex filters</td><td>High</td><td>4/5 — High</td><td>Reviewed assignment suggestions</td></tr>
+<tr><td>3</td><td>Prompt-driven release creation assistant</td><td>Create a release and assign the right material from one natural-language request</td><td>High</td><td>4/5 — High</td><td>Chatbot prompt that creates the release and material assignments</td></tr>
 <tr><td>4</td><td>Pricing and costing assistant</td><td>Respond faster and more consistently to vendor cost changes</td><td>High</td><td>4/5 — High</td><td>Proposed updates or reviewable export</td></tr>
 <tr><td>5</td><td>Billing and schedule-of-values assistant</td><td>Reduce spreadsheet work and accelerate accurate billing preparation</td><td>Very high</td><td>4/5 — High</td><td>Billing-line and amount recommendations</td></tr>
 <tr><td>6</td><td>Submittal intake and revision-impact assistant</td><td>Less rekeying and fewer missed changes after ordering</td><td>Very high</td><td>4/5 — High</td><td>Document review and proposed changes</td></tr>
@@ -184,12 +184,12 @@ Updated with the October 19 AI discussion and <a href="https://accessit.atlassia
 <p><strong>Difficulty: 3/5 for an on-demand summary; 4/5 for proactive alerts.</strong> Start when a user asks, then schedule alerts after the team trusts the results.</p>
 <p><strong>Explanation note:</strong> “The agent should act like a project review assistant: find exceptions, explain them, and point the user to the right records.”</p>
 
-<h3 id="release-assignment-assistant">3. Release assignment assistant</h3>
-<p><strong>What users would experience.</strong> When a user creates a release, cERP suggests the material that belongs on it based on the release name and available project information.</p>
-<p><strong>Example:</strong> A release named “hollow metal frames” produces a proposed set of matching items using category, product group, vendor, phase, and other relevant details.</p>
-<p><strong>Why it matters.</strong> Release filters vary by project and are easy to apply incompletely, leaving material unassigned and creating downstream surprises.</p>
-<p><strong>Difficulty: 4/5.</strong> Suggestions must work across different naming habits and project structures, and users need a clear review of included and excluded material.</p>
-<p><strong>Explanation note:</strong> “The goal is not to hide the filters. It is to propose the right result and show the user why each item was selected.”</p>
+<h3 id="prompt-driven-release-creation-assistant">3. Prompt-driven release creation assistant</h3>
+<p><strong>What users would experience.</strong> A user tells the chatbot what release they need in ordinary language. The agent asks for any missing required information, creates the release, and assigns the matching material based on the request.</p>
+<p><strong>Example:</strong> “Create a hollow metal frames release for phase two, due November 15.” The agent interprets the request, identifies the appropriate material using category, product group, vendor, phase, and other relevant details, then creates the release and its assignments.</p>
+<p><strong>Why it matters.</strong> It replaces a multi-step process of creating the release, setting dates, choosing several filters, and checking for material that was accidentally left unassigned.</p>
+<p><strong>Difficulty: 4/5.</strong> Prompts may be incomplete or ambiguous, so the agent must ask useful follow-up questions and reliably translate the answers into the correct release fields and material criteria.</p>
+<p><strong>Explanation note:</strong> “The user describes the release they need, and the agent builds it—including the material assignments.”</p>
 
 <h3 id="pricing-and-costing-assistant">4. Pricing and costing assistant</h3>
 <p><strong>What users would experience.</strong> The assistant identifies vendor cost increases and prepares proposed purchase-price, cost, and—when appropriate—sales-price adjustments.</p>
@@ -275,7 +275,7 @@ Updated with the October 19 AI discussion and <a href="https://accessit.atlassia
 <tr><td>1. Define the first question set</td><td>Agree on the project and release questions users most need answered, including the reports, fields, examples, and expected answers behind them.</td><td>Process owners confirm the answers and identify representative projects for testing.</td></tr>
 <tr><td>2. Launch Ask cERP with project/release readiness</td><td>Users receive trustworthy, read-only answers with a concise explanation and supporting records.</td><td>Experts agree the answers are useful, understandable, and consistently scoped to the right customer, company, and user.</td></tr>
 <tr><td>3. Add the proactive PM brief</td><td>The same proven checks notify users about new or materially changed roadblocks without waiting for a question.</td><td>Alerts arrive early enough to help, reach the right owner, and do not create excessive noise.</td></tr>
-<tr><td>4. Add release-assignment suggestions</td><td>Users receive a reviewable proposal for assigning material to releases.</td><td>Accepted suggestions save time without omitting, duplicating, or incorrectly moving material.</td></tr>
+<tr><td>4. Add prompt-driven release creation</td><td>Users create a release and assign its material through one conversational request, with follow-up questions when required information is missing.</td><td>Completed releases save time without omitting, duplicating, or incorrectly assigning material.</td></tr>
 <tr><td>5. Pilot pricing and billing assistance</td><td>Users receive reviewable pricing changes and billing or schedule-of-values recommendations.</td><td>Process owners confirm calculations, review effort, time saved, and the handling of customer-specific variations.</td></tr>
 <tr><td>6. Expand by demonstrated value</td><td>Introduce the remaining opportunities where customer volume, pain, and measurable return justify the work.</td><td>Each expansion has a named owner, baseline, success measure, and clear approval boundary.</td></tr>
 </tbody>
